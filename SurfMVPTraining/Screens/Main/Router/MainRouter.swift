@@ -11,11 +11,12 @@ final class MainRouter: MainRouterInput {
     
     //MARK: - Proprties
     
-    //weak var view: ModuleTransitionable?
+    weak var view: ModuleTransitionable?
     
     //MARK: - MainRouterInput
     func showPushModule() {
-        
+        let pushViewController = PushModuleConfigurator().configure()
+        view?.push(module: pushViewController, animated: true)
     }
     
     func showPresentModule(isHiddenLabel: Bool) {

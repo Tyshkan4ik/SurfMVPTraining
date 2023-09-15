@@ -21,6 +21,16 @@
 		8137EBC42AB2E9D700F02D16 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8137EBC32AB2E9D700F02D16 /* MainRouter.swift */; };
 		8137EBC62AB2E9E600F02D16 /* MainRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8137EBC52AB2E9E600F02D16 /* MainRouterInput.swift */; };
 		8137EBCA2AB2EA2B00F02D16 /* MainPresenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8137EBC92AB2EA2B00F02D16 /* MainPresenterModel.swift */; };
+		81F690BA2AB33902003B79E3 /* PushModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F690B92AB33902003B79E3 /* PushModuleConfigurator.swift */; };
+		81F690BC2AB33916003B79E3 /* PushRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F690BB2AB33916003B79E3 /* PushRouterInput.swift */; };
+		81F690BE2AB3392D003B79E3 /* PushRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F690BD2AB3392D003B79E3 /* PushRouter.swift */; };
+		81F690C02AB3393F003B79E3 /* PushPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F690BF2AB3393F003B79E3 /* PushPresenter.swift */; };
+		81F690C22AB3395F003B79E3 /* PushModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F690C12AB3395F003B79E3 /* PushModuleInput.swift */; };
+		81F690C42AB33975003B79E3 /* PushModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F690C32AB33975003B79E3 /* PushModuleOutput.swift */; };
+		81F690C62AB33C5A003B79E3 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F690C52AB33C5A003B79E3 /* PushViewController.swift */; };
+		81F690C82AB33C79003B79E3 /* PushViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F690C72AB33C79003B79E3 /* PushViewInput.swift */; };
+		81F690CA2AB33C9D003B79E3 /* PushViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F690C92AB33C9D003B79E3 /* PushViewOutput.swift */; };
+		81F690CD2AB487C0003B79E3 /* ModuleTransitionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F690CC2AB487C0003B79E3 /* ModuleTransitionable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +50,16 @@
 		8137EBC52AB2E9E600F02D16 /* MainRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouterInput.swift; sourceTree = "<group>"; };
 		8137EBC92AB2EA2B00F02D16 /* MainPresenterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterModel.swift; sourceTree = "<group>"; };
 		8144003F2AB32D9500AB9906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
+		81F690B92AB33902003B79E3 /* PushModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushModuleConfigurator.swift; sourceTree = "<group>"; };
+		81F690BB2AB33916003B79E3 /* PushRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushRouterInput.swift; sourceTree = "<group>"; };
+		81F690BD2AB3392D003B79E3 /* PushRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushRouter.swift; sourceTree = "<group>"; };
+		81F690BF2AB3393F003B79E3 /* PushPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushPresenter.swift; sourceTree = "<group>"; };
+		81F690C12AB3395F003B79E3 /* PushModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushModuleInput.swift; sourceTree = "<group>"; };
+		81F690C32AB33975003B79E3 /* PushModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushModuleOutput.swift; sourceTree = "<group>"; };
+		81F690C52AB33C5A003B79E3 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
+		81F690C72AB33C79003B79E3 /* PushViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewInput.swift; sourceTree = "<group>"; };
+		81F690C92AB33C9D003B79E3 /* PushViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewOutput.swift; sourceTree = "<group>"; };
+		81F690CC2AB487C0003B79E3 /* ModuleTransitionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTransitionable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				8137EBAE2AB2E6CB00F02D16 /* Application */,
+				81F690CB2AB4871E003B79E3 /* Support */,
 				8137EBB12AB2E84400F02D16 /* Screens */,
 			);
 			path = SurfMVPTraining;
@@ -110,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				8137EBB22AB2E86000F02D16 /* Main */,
+				81F690B32AB3382D003B79E3 /* Push */,
+				81F690B42AB3385D003B79E3 /* Present */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -177,6 +200,69 @@
 				8137EBC92AB2EA2B00F02D16 /* MainPresenterModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		81F690B32AB3382D003B79E3 /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				81F690B82AB338E6003B79E3 /* Configurator */,
+				81F690B72AB338DE003B79E3 /* Router */,
+				81F690B62AB338D5003B79E3 /* Presenter */,
+				81F690B52AB338CD003B79E3 /* View */,
+			);
+			path = Push;
+			sourceTree = "<group>";
+		};
+		81F690B42AB3385D003B79E3 /* Present */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Present;
+			sourceTree = "<group>";
+		};
+		81F690B52AB338CD003B79E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81F690C52AB33C5A003B79E3 /* PushViewController.swift */,
+				81F690C72AB33C79003B79E3 /* PushViewInput.swift */,
+				81F690C92AB33C9D003B79E3 /* PushViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		81F690B62AB338D5003B79E3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				81F690BF2AB3393F003B79E3 /* PushPresenter.swift */,
+				81F690C12AB3395F003B79E3 /* PushModuleInput.swift */,
+				81F690C32AB33975003B79E3 /* PushModuleOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		81F690B72AB338DE003B79E3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				81F690BD2AB3392D003B79E3 /* PushRouter.swift */,
+				81F690BB2AB33916003B79E3 /* PushRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		81F690B82AB338E6003B79E3 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				81F690B92AB33902003B79E3 /* PushModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		81F690CB2AB4871E003B79E3 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				81F690CC2AB487C0003B79E3 /* ModuleTransitionable.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,18 +335,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81F690CD2AB487C0003B79E3 /* ModuleTransitionable.swift in Sources */,
 				8137EB9F2AB2E48600F02D16 /* MainViewController.swift in Sources */,
+				81F690C62AB33C5A003B79E3 /* PushViewController.swift in Sources */,
 				8137EBBC2AB2E98800F02D16 /* MainPresenter.swift in Sources */,
+				81F690C42AB33975003B79E3 /* PushModuleOutput.swift in Sources */,
+				81F690BE2AB3392D003B79E3 /* PushRouter.swift in Sources */,
 				8137EBBA2AB2E97700F02D16 /* MainViewOutput.swift in Sources */,
+				81F690CA2AB33C9D003B79E3 /* PushViewOutput.swift in Sources */,
 				8137EB9B2AB2E48600F02D16 /* AppDelegate.swift in Sources */,
 				8137EBB82AB2E96600F02D16 /* MainViewInput.swift in Sources */,
+				81F690C22AB3395F003B79E3 /* PushModuleInput.swift in Sources */,
+				81F690C02AB3393F003B79E3 /* PushPresenter.swift in Sources */,
+				81F690BA2AB33902003B79E3 /* PushModuleConfigurator.swift in Sources */,
 				8137EBC42AB2E9D700F02D16 /* MainRouter.swift in Sources */,
 				8137EBC02AB2E9B000F02D16 /* MainModuleOutput.swift in Sources */,
+				81F690C82AB33C79003B79E3 /* PushViewInput.swift in Sources */,
 				8137EBC22AB2E9C500F02D16 /* MainModuleConfigurator.swift in Sources */,
 				8137EB9D2AB2E48600F02D16 /* SceneDelegate.swift in Sources */,
 				8137EBCA2AB2EA2B00F02D16 /* MainPresenterModel.swift in Sources */,
 				8137EBC62AB2E9E600F02D16 /* MainRouterInput.swift in Sources */,
 				8137EBBE2AB2E99900F02D16 /* MainModuleInput.swift in Sources */,
+				81F690BC2AB33916003B79E3 /* PushRouterInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

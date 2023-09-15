@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, MainViewInput {
+class MainViewController: UIViewController, MainViewInput, ModuleTransitionable {
     
     //MARK: - Properties
     var output: MainViewOutput?
