@@ -31,6 +31,15 @@
 		81F690C82AB33C79003B79E3 /* PushViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F690C72AB33C79003B79E3 /* PushViewInput.swift */; };
 		81F690CA2AB33C9D003B79E3 /* PushViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F690C92AB33C9D003B79E3 /* PushViewOutput.swift */; };
 		81F690CD2AB487C0003B79E3 /* ModuleTransitionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F690CC2AB487C0003B79E3 /* ModuleTransitionable.swift */; };
+		81F690D32AB49314003B79E3 /* PresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F690D22AB49314003B79E3 /* PresentViewController.swift */; };
+		81F690D52AB49324003B79E3 /* PresentViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F690D42AB49324003B79E3 /* PresentViewInput.swift */; };
+		81F690D72AB4933F003B79E3 /* PresentViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F690D62AB4933F003B79E3 /* PresentViewOutput.swift */; };
+		81F690D92AB4934F003B79E3 /* PresentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F690D82AB4934F003B79E3 /* PresentPresenter.swift */; };
+		81F690DB2AB49365003B79E3 /* PresentModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F690DA2AB49365003B79E3 /* PresentModuleInput.swift */; };
+		81F690DD2AB4937B003B79E3 /* PresentModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F690DC2AB4937B003B79E3 /* PresentModuleOutput.swift */; };
+		81F690DF2AB4938E003B79E3 /* PresentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F690DE2AB4938E003B79E3 /* PresentRouter.swift */; };
+		81F690E12AB493A0003B79E3 /* PresentRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F690E02AB493A0003B79E3 /* PresentRouterInput.swift */; };
+		81F690E32AB493B3003B79E3 /* PresentModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F690E22AB493B3003B79E3 /* PresentModuleConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +69,15 @@
 		81F690C72AB33C79003B79E3 /* PushViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewInput.swift; sourceTree = "<group>"; };
 		81F690C92AB33C9D003B79E3 /* PushViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewOutput.swift; sourceTree = "<group>"; };
 		81F690CC2AB487C0003B79E3 /* ModuleTransitionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTransitionable.swift; sourceTree = "<group>"; };
+		81F690D22AB49314003B79E3 /* PresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentViewController.swift; sourceTree = "<group>"; };
+		81F690D42AB49324003B79E3 /* PresentViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentViewInput.swift; sourceTree = "<group>"; };
+		81F690D62AB4933F003B79E3 /* PresentViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentViewOutput.swift; sourceTree = "<group>"; };
+		81F690D82AB4934F003B79E3 /* PresentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentPresenter.swift; sourceTree = "<group>"; };
+		81F690DA2AB49365003B79E3 /* PresentModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentModuleInput.swift; sourceTree = "<group>"; };
+		81F690DC2AB4937B003B79E3 /* PresentModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentModuleOutput.swift; sourceTree = "<group>"; };
+		81F690DE2AB4938E003B79E3 /* PresentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentRouter.swift; sourceTree = "<group>"; };
+		81F690E02AB493A0003B79E3 /* PresentRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentRouterInput.swift; sourceTree = "<group>"; };
+		81F690E22AB493B3003B79E3 /* PresentModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentModuleConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +234,10 @@
 		81F690B42AB3385D003B79E3 /* Present */ = {
 			isa = PBXGroup;
 			children = (
+				81F690D12AB492BA003B79E3 /* Configurator */,
+				81F690D02AB492B8003B79E3 /* Router */,
+				81F690CF2AB492B0003B79E3 /* Presenter */,
+				81F690CE2AB492AD003B79E3 /* View */,
 			);
 			path = Present;
 			sourceTree = "<group>";
@@ -263,6 +285,43 @@
 				81F690CC2AB487C0003B79E3 /* ModuleTransitionable.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		81F690CE2AB492AD003B79E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81F690D22AB49314003B79E3 /* PresentViewController.swift */,
+				81F690D42AB49324003B79E3 /* PresentViewInput.swift */,
+				81F690D62AB4933F003B79E3 /* PresentViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		81F690CF2AB492B0003B79E3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				81F690D82AB4934F003B79E3 /* PresentPresenter.swift */,
+				81F690DA2AB49365003B79E3 /* PresentModuleInput.swift */,
+				81F690DC2AB4937B003B79E3 /* PresentModuleOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		81F690D02AB492B8003B79E3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				81F690DE2AB4938E003B79E3 /* PresentRouter.swift */,
+				81F690E02AB493A0003B79E3 /* PresentRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		81F690D12AB492BA003B79E3 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				81F690E22AB493B3003B79E3 /* PresentModuleConfigurator.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,21 +399,30 @@
 				81F690C62AB33C5A003B79E3 /* PushViewController.swift in Sources */,
 				8137EBBC2AB2E98800F02D16 /* MainPresenter.swift in Sources */,
 				81F690C42AB33975003B79E3 /* PushModuleOutput.swift in Sources */,
+				81F690D52AB49324003B79E3 /* PresentViewInput.swift in Sources */,
 				81F690BE2AB3392D003B79E3 /* PushRouter.swift in Sources */,
 				8137EBBA2AB2E97700F02D16 /* MainViewOutput.swift in Sources */,
 				81F690CA2AB33C9D003B79E3 /* PushViewOutput.swift in Sources */,
 				8137EB9B2AB2E48600F02D16 /* AppDelegate.swift in Sources */,
 				8137EBB82AB2E96600F02D16 /* MainViewInput.swift in Sources */,
 				81F690C22AB3395F003B79E3 /* PushModuleInput.swift in Sources */,
+				81F690DF2AB4938E003B79E3 /* PresentRouter.swift in Sources */,
+				81F690DD2AB4937B003B79E3 /* PresentModuleOutput.swift in Sources */,
 				81F690C02AB3393F003B79E3 /* PushPresenter.swift in Sources */,
 				81F690BA2AB33902003B79E3 /* PushModuleConfigurator.swift in Sources */,
+				81F690D32AB49314003B79E3 /* PresentViewController.swift in Sources */,
+				81F690E12AB493A0003B79E3 /* PresentRouterInput.swift in Sources */,
 				8137EBC42AB2E9D700F02D16 /* MainRouter.swift in Sources */,
 				8137EBC02AB2E9B000F02D16 /* MainModuleOutput.swift in Sources */,
 				81F690C82AB33C79003B79E3 /* PushViewInput.swift in Sources */,
+				81F690E32AB493B3003B79E3 /* PresentModuleConfigurator.swift in Sources */,
 				8137EBC22AB2E9C500F02D16 /* MainModuleConfigurator.swift in Sources */,
 				8137EB9D2AB2E48600F02D16 /* SceneDelegate.swift in Sources */,
+				81F690D92AB4934F003B79E3 /* PresentPresenter.swift in Sources */,
 				8137EBCA2AB2EA2B00F02D16 /* MainPresenterModel.swift in Sources */,
+				81F690D72AB4933F003B79E3 /* PresentViewOutput.swift in Sources */,
 				8137EBC62AB2E9E600F02D16 /* MainRouterInput.swift in Sources */,
+				81F690DB2AB49365003B79E3 /* PresentModuleInput.swift in Sources */,
 				8137EBBE2AB2E99900F02D16 /* MainModuleInput.swift in Sources */,
 				81F690BC2AB33916003B79E3 /* PushRouterInput.swift in Sources */,
 			);

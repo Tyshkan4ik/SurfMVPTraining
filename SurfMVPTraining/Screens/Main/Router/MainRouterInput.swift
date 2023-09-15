@@ -9,6 +9,5 @@ import Foundation
 
 protocol MainRouterInput {
     func showPushModule()
-    func showPresentModule(isHiddenLabel: Bool)
-    //func showPresentModule(output: PresentModuleoutput?, isHiddenLabel: Bool)
+    func showPresentModule(output: PresentModuleOutput?, isHiddenLabel: Bool)
 }

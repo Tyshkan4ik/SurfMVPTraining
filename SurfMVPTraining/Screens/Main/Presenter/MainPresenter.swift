@@ -30,6 +30,19 @@ final class MainPresenter: MainViewOutput, MainModuleInput {
     }
     
     func presentButtonDidTap() {
-        router?.showPresentModule(isHiddenLabel: isHiddenLabel)
+        router?.showPresentModule(output: self, isHiddenLabel: isHiddenLabel)
     }
+}
+
+//MARK: - PresentModuleOutput
+
+/// Тут мы подписываем наш класс на протокол PresentModuleOutput
+/// Чтобы он выполнял функцию делегата для PresentModule
+extension MainPresenter: PresentModuleOutput {
+    func changeLabelState() {
+        isHiddenLabel.toggle()
+        view?.setupLabelState(state: isHiddenLabel)
+    }
+    
+    
 }

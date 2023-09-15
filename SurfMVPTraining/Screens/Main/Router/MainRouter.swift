@@ -19,8 +19,8 @@ final class MainRouter: MainRouterInput {
         view?.push(module: pushViewController, animated: true)
     }
     
-    func showPresentModule(isHiddenLabel: Bool) {
-        
+    func showPresentModule(output: PresentModuleOutput?, isHiddenLabel: Bool) {
+        let presentViewController = PresentModuleConfigurator().configure(output: output, isHiddenLabel: isHiddenLabel)
+        view?.presentModule(presentViewController, animated: true, completion: nil)
     }
-    
 }
